@@ -1,0 +1,143 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body{
+      background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+header .logo_container{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #24303c;
+   
+}
+
+.logo_container img{
+    max-width: 200px;
+}
+
+main{
+    background-color: rgba(36, 48, 60, 1);
+    width:40%;
+    display: block;
+    margin: auto;
+    padding: 0px 0px;
+    border-radius: 10px;
+     -webkit-box-shadow: 8px 7px 5px 0px rgba(28,21,235,0.58);
+-moz-box-shadow: 8px 7px 5px 0px rgba(28,21,235,0.58);
+box-shadow: 8px 7px 5px 0px rgba(28,21,235,0.58);
+  
+}
+
+main .tittle{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 50px 0;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 5px;
+    font-size: 30px;
+}
+
+.tittle p {
+    text-align: center;
+}
+
+
+
+.form_container{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+  
+}
+
+.legales {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    color: grey;
+}
+
+
+footer{
+   
+    padding-top: 50px;
+
+    
+}
+
+.redes_container{
+    background-color: #24303c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+      
+
+}
+
+.redes_container img {
+    max-width: 40px;
+    padding: 10px 5px;
+    
+}
+
+input{
+    min-width: 20em;
+}
+
+.boton{
+    min-width: 10em; 
+}
+
+
+@media screen and (max-width: 780px){
+
+    main{
+        width: 80%;
+    }
+
+    main .tittle{
+      
+        margin: 25px 0;
+       }
+
+    h1{
+        text-align: center;
+        padding: 30px 20px 10px 20px;
+        font-size: 25px;
+    }
+    
+    .tittle p {
+        text-align: center;
+    }
+
+    .form_container{
+        max-width: 70%;
+    }
+
+    input{
+        min-width: 13em;
+
+    }
+
+    .boton{
+        min-width: 12em; 
+    }
+
+    .legales{
+        padding: 20px 10px;
+    }
+}

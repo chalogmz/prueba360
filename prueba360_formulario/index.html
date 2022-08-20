@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Template form</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo_container">
+        <img src="img/logo.png" alt="your logo" />
+      </div>
+    </header>
+    <main>
+      <section class="tittle">
+        <h1>Subscribirse ahora</h1>
+
+        <p>Recibirás todas las novedades en tu correo</p>
+      </section>
+
+      <section class="form_container">
+        <form
+          method="post"
+          style="margin: 0px 0px"
+          id="formulario1"
+          action="https://php.embluemail.com/Integraciones/whlog/whlog.php"
+          onsubmit="window.open('https://php.embluemail.com/Integraciones/whlog/whlog.php', '_blank');"
+        >
+          <div style="margin: 10px">
+            <input
+              style="
+                padding: 10px 0px 10px !important;
+
+                font-family: Helvetica, Arial, sans-serif;
+                font-style: normal;
+                font-size: 14px;
+                text-align: center;
+                border-radius: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid #1f52c5;
+              "
+              type="text"
+              placeholder="Nombre"
+              value=""
+              name="nombre"
+              id="nombre"
+            />
+          </div>
+          <div style="margin: 10px">
+            <input
+              style="
+                padding: 10px 0px 10px !important;
+
+                font-family: Helvetica, Arial, sans-serif;
+                font-style: normal;
+                font-size: 14px;
+                text-align: center;
+                border-radius: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid #1f52c5;
+              "
+              type="text"
+              placeholder="Apellido"
+              value=""
+              name="apellido"
+              id="apellido"
+            />
+          </div>
+          <div style="margin: 10px">
+            <input
+              style="
+                padding: 10px 0px 10px !important;
+
+                font-family: Helvetica, Arial, sans-serif;
+                font-style: normal;
+                font-size: 14px;
+                text-align: center;
+                border-radius: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid #1f52c5;
+              "
+              type="text"
+              placeholder="Teléfono"
+              value=""
+              name="telefono"
+              id="telefono"
+              maxlength="10"
+            />
+          </div>
+          <div style="margin: 10px">
+            <input
+              style="
+                padding: 10px 0px 10px !important;
+
+                font-family: Helvetica, Arial, sans-serif;
+                font-style: normal;
+                font-size: 14px;
+                text-align: center;
+                border-radius: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid #1f52c5;
+              "
+              type="email"
+              placeholder="Email"
+              value=""
+              name="email"
+              id="email"
+            />
+          </div>
+
+          <div style="padding-top: 40px">
+            <input
+              class="boton"
+              style="
+                padding: 10px 0px !important;
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: Roboto, Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                text-align: center;
+                background-color: #1f52c5;
+                border-radius: 10px;
+                border: none;
+              "
+              type="submit"
+              name="descargar"
+              value="Registrarme"
+              id="btn"
+            />
+          </div>
+          <div>
+            <input
+              type="hidden"
+              placeholder="Evento"
+              value="formulario_registro"
+              name="evento"
+            />
+            <input
+              type="hidden"
+              name="token"
+              value="127ab1c646144609b33133d0072ce3a1"
+            />
+          </div>
+          <div>
+            <input type="hidden" name="redir" value="" />
+          </div>
+        </form>
+      </section>
+
+      <section class="legales">
+        <p>&nbsp;</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="redes_container">
+        <div>
+          <img src="img/facebook.png" alt="facebook" />
+        </div>
+        <div>
+          <img src="img/twitter.png" alt="twitter" />
+        </div>
+
+        <div>
+          <img src="img/instagram.png" alt="instagram" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="formLogic.js"></script>
+    <script src="logic.js"></script>
+    <script src="validation.js"></script>
+
+  </body>
+</html>
